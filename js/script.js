@@ -1,5 +1,35 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the modal
+    // Dropdown Menu Toggle
+    var dropdownToggle = document.getElementById('itinerary-toggle');
+    if (dropdownToggle) {
+        dropdownToggle.addEventListener('click', function(event) {
+            event.preventDefault();
+            var dropdownContent = this.nextElementSibling;
+            dropdownContent.classList.toggle('show');
+        });
+    }
+
+    // Close the dropdown or modal if the user clicks outside of it
+    window.addEventListener('click', function(event) {
+        // Dropdown closing logic
+        if (!event.target.closest('.dropdown')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+
+        // Lightbox modal closing logic
+        var modal = document.getElementById('lightbox-modal');
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+
+    // Lightbox Modal
     var modal = document.getElementById('lightbox-modal');
 
     // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -26,13 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // When the user clicks on <span> (x), close the modal
     if (span) {
         span.onclick = function() {
-            modal.style.display = "none";
-        }
-    }
-
-    // When the user clicks anywhere outside of the modal content, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
             modal.style.display = "none";
         }
     }
