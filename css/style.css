@@ -136,26 +136,6 @@ footer {
     color: #666;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-}
-
 /* Gallery Styles */
 .gallery {
     margin-top: 2rem;
@@ -236,4 +216,49 @@ footer {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
+}
+
+/* Rich Itinerary Item Styles */
+.itinerary-item-rich .content-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.itinerary-item-rich .text-content {
+    flex: 1;
+}
+
+.itinerary-item-rich .visual-content {
+    flex: 1;
+}
+
+.itinerary-item-rich .visual-content img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .itinerary-item-rich .content-wrapper {
+        flex-direction: column;
+    }
 }
