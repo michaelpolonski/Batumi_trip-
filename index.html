@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша поездка в Батуми | 21-26 Сентября</title>
+    <meta name="description" content="План нашей семейной поездки в Батуми 21-26 сентября. Маршрут, бронирования и полезная информация.">
+
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="Наша поездка в Батуми">
+    <meta property="og:description" content="Все детали нашей поездки в Батуми: маршрут, бронирования и советы.">
+    <meta property="og:image" content="https://image.pollinations.ai/prompt/panoramic%20view%20of%20Batumi%20city%20and%20Black%20Sea%20from%20a%20high%20viewpoint,%20sunny?width=1200&height=630&seed=6">
+    <meta property="og:url" content=""> <!-- To be updated -->
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="https://image.pollinations.ai/prompt/Simple, modern logo for a trip to Batumi, incorporating a stylized 'B' and a subtle Black Sea element like a wave. Clean lines, professional feel, suitable for a website header.?width=150&height=75" alt="Логотип поездки в Батуми">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Маршрут</a>
+                    <ul class="dropdown-content">
+                        <li><a href="day1.html">День 1 (Сб)</a></li>
+                        <li><a href="day2.html">День 2 (Вс)</a></li>
+                        <li><a href="day3.html">День 3 (Пн)</a></li>
+                        <li><a href="day4.html">День 4 (Вт)</a></li>
+                        <li><a href="day5.html">День 5 (Ср)</a></li>
+                        <li><a href="day6.html">День 6 (Чт)</a></li>
+                    </ul>
+                </li>
+                <li><a href="bookings.html">Бронирования</a></li>
+                <li><a href="info.html">Полезная информация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Семейное путешествие в Батуми!</h1>
+            <p>Добро пожаловать на сайт нашей поездки! Здесь собрана вся информация о нашем приключении в Батуми с 21 по 26 сентября.</p>
+            <a href="trip_to_batumi.ics" download="Batumi-Trip-Itinerary.ics" class="action-button">Добавить в календарь</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Batumi" target="_blank" class="action-button">Открыть карту Батуми</a>
+        </section>
+
+        <section class="overview">
+            <h2>Обзор поездки</h2>
+            <div class="map-container">
+                <!-- Placeholder for OpenStreetMap -->
+                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=41.6369,41.649,41.6569,41.659&layer=mapnik&marker=41.654,41.6469"
+                    style="border: 1px solid black">
+                </iframe>
+                <br/>
+                <small><a href="https://www.openstreetmap.org/?mlat=41.654&mlon=41.6469#map=15/41.654/41.6469" target="_blank">Посмотреть на карте</a></small>
+            </div>
+            <img src="https://image.pollinations.ai/prompt/panoramic%20view%20of%20Batumi%20city%20and%20Black%20Sea%20from%20a%20high%20viewpoint,%20sunny?width=800&height=600&seed=6" alt="Вид на Батуми" class="main-image">
+            <p>Используйте меню навигации, чтобы найти детали о нашем маршруте, бронированиях и другую полезную информацию.</p>
+        </section>
+    </main>
+
+        <section class="gallery">
+            <h2>Фотогалерея</h2>
+            <div class="gallery-grid">
+                <img src="https://image.pollinations.ai/prompt/photo%20of%20Ali%20and%20Nino%20statue%20in%20Batumi,%20georgia,%20evening,%20dramatic%20lighting?width=400&height=300&seed=1" alt="Статуя Али и Нино" class="gallery-thumbnail">
+                <img src="https://image.pollinations.ai/prompt/photo%20of%20Batumi%20Boulevard%20with%20palm%20trees%20and%20sea%20view,%20sunny%20day?width=400&height=300&seed=2" alt="Бульвар Батуми" class="gallery-thumbnail">
+                <img src="https://image.pollinations.ai/prompt/photo%20of%20Piazza%20Square%20in%20Batumi,%20georgia,%20italian%20architecture,%20daytime?width=400&height=300&seed=3" alt="Площадь Пьяцца" class="gallery-thumbnail">
+                <img src="https://image.pollinations.ai/prompt/photo%20of%20the%20Alphabetic%20Tower%20in%20Batumi,%20georgia,%20modern%20architecture,%20night?width=400&height=300&seed=4" alt="Алфавитная башня" class="gallery-thumbnail">
+                <img src="https://image.pollinations.ai/prompt/photo%20of%20Batumi%20Botanical%20Garden,%20lush%20greenery,%20exotic%20plants,%20sea%20view?width=400&height=300&seed=5" alt="Ботанический сад" class="gallery-thumbnail">
+                <img src="https://image.pollinations.ai/prompt/panoramic%20view%20of%20Batumi%20city%20and%20Black%20Sea%20from%20a%20high%20viewpoint,%20sunny?width=400&height=300&seed=6" alt="Вид на Батуми" class="gallery-thumbnail">
+            </div>
+        </section>
+
+        <!-- The Lightbox Modal -->
+        <div id="lightbox-modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="lightbox-image">
+            <div id="caption"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Поездка в Батуми. Все права защищены.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
